@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*------------ Header Component ---------------*/
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header li {
+    margin-right: 50px;
+}
+
+header li a{
+    text-decoration: none;
+    color: white;
+}
+
+header li a:hover {
+    color:  #0096fa;
+    font-size: 18px;
+    transition: 300ms;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/*------------ Body Components ---------------*/
+
+main{
+    overflow: hidden;
+    height: 80vh;
+}
+
+/* MAIN-PAGE */
+
+main .main-content-presentation{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    margin-top: 50px;
+}
+
+main .main-content-presentation .main-imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-presentation .main-imagem img{
+    margin-top: 20px;
+    height: 470px;
+    box-shadow: 20px 20px 50px 0 rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+.main-content-presentation .main-imagem img:hover{
+    height: 490px;
+    transition: 300ms;
+}
+
+.main-content-presentation .main-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+#first-details {
+    margin-top: 20px;
+}
+
+.main-content-presentation .main-details .main-contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.main-content-presentation .main-details .main-contacts img{
+    width: 80px;
+    height: 80px;
+    transition: 300ms;
+}
+
+.main-content-presentation .main-details .main-contacts img:hover{
+    width: 100px;
+    height: 100px;
+    transition: 300ms;
+}
+
+#linkedin {
+    margin-right: 10px;
+}
+
+#github {
+    margin-left: 10px;
+}
+
+
+/* ABOUT-ME-PAGE */
+
+main .main-about-me {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    margin-top: 50px;
+}
+
+.main-about-me .main-info-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+.main-about-me .main-skills-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.main-about-me .main-skills-about-me .list-skills {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    margin-top: 30px;
+}
+
+.main-about-me .main-skills-about-me .list-skills .second-side {
+    margin-left: 100px;
+}
+
+#aboutMe {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skillsBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 1);
+
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #D9D9D9;
+}
+
+/* PROJECTS-PAGE */
+.main-content-projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-content-projects button{
+    border: none;
+    background-color: white;
+    transition: 500ms;
+}
+
+.main-content-projects button img{
+    transition: 300ms;
+}
+
+.main-content-projects button img:hover{
+    filter: saturate(100);
+    transition: 300ms;
+}
+
+.main-content-projects .main-content-cards {
+    display: flex;
+    align-items: center;
+}
+
+.main-content-projects .main-content-cards .cards {
+    width: 350px;
+    height: 450px;
+    background-color: #D9D9D9;
+    transition: 300ms;
+    border-radius: 20px;
+}
+
+.main-content-projects .main-content-cards .cards:hover {
+    box-shadow: 0px 0px 50px 0 rgb(68, 68, 68);
+    transition: 300ms;
+}
+
+.main-content-projects .main-content-cards .cards .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.main-content-projects .main-content-cards .cards .card-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content-projects .main-content-cards .cards .card-img-project {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#card1{
+    margin-right: 50px;
+}
+
+#card3{
+    margin-left: 50px;
+}
+
+#card4{
+    margin-right: 50px;
+}
+
+#card6{
+    margin-left: 50px;
+}
+
+#description-section{
+    margin-top: 40px;
+}
+#text-description {
+    margin-top: 10px;
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* TECHNOLOGIES-PAGE */
+.main-tech-info .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main-tech-info .row img:hover {
+    width: 120px;
+    height: 120px;
+    transition: 300ms;
+}
+
+.main-tech-info .row img {
+    transition: 300ms;
+}
+
+#technologies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* CERTIFICATION */
+.main-info-certification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info-certification .certification-content {
+    flex-direction: column;
+    width: 1000px;
+    height: 450px;
+    background-color: gray;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+
+.main-info-certification .certification-content .row-certificate {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.main-info-certification .certification-content iframe {
+    height: 210px;
+}
+
+#certification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+/*------------ Footer Component ---------------*/
+
+footer {
+    bottom: 0;
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px #7a7a7ab8 solid;
+    height: 10vh;
+}

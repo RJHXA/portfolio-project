@@ -1,0 +1,32 @@
+<main>
+    <h1 id="projects">Projects</h1>
+    
+    <div class="main-content-projects">
+
+        <button (click)="backProjects()"><img src="./assets/imgs/left.svg"></button>
+
+        <div class="main-content-cards">
+            <div *ngFor="let tempProjects of projects">
+                <div class="cards" id="card{{tempProjects.id}}">
+                    <div class="card-title">
+                        <h2>{{ tempProjects.title }}</h2>
+                    </div>
+
+                    <div class="card-description">
+                        <h3 id="description-section">Description</h3>
+                        <p align="center" id="text-description">{{ tempProjects.description }}</p>
+                    </div>
+
+                    <div class="card-img-project">
+                        <p>SEE MORE ABOUT</p>
+                        <a href="{{ tempProjects.url }}" target="_blank"><img src="./assets/imgs/github-logo.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button (click)="nextProjects()"><img src="./assets/imgs/right.svg"></button>
+
+
+    </div>
+</main>
