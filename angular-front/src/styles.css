@@ -8,13 +8,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: #1D1B1B;
 }
 
 /*------------ Header Component ---------------*/
 
 header {
-    background-color: black;
-    color: white;
+    background-color: #1D1B1B;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +56,7 @@ header li a:hover {
 main{
     overflow: hidden;
     height: 80vh;
+    background-color: #F0F0F0;
 }
 
 /* MAIN-PAGE */
@@ -190,7 +191,7 @@ main .main-about-me {
 
 .main-content-projects button{
     border: none;
-    background-color: white;
+    background-color: #F0F0F0;
     transition: 500ms;
 }
 
@@ -341,7 +342,7 @@ main .main-about-me {
 
 footer {
     bottom: 0;
-    color: black;
+    background-color: #F0F0F0;
     width: 100%;
     display: flex;
     align-items: center;
