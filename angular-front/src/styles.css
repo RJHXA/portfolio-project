@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    color: #1D1B1B;
 }
 
 /*------------ Header Component ---------------*/
@@ -226,7 +225,7 @@ main .main-about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #1D1B1B;
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -312,24 +311,72 @@ main .main-about-me {
 }
 
 .main-info-certification .certification-content {
-    flex-direction: column;
-    width: 1000px;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
     height: 450px;
-    background-color: gray;
     margin-top: 20px;
-    overflow-y: scroll;
+    background-color: #525659;
+    overflow: hidden;
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
+
+.main-info-certification .certification-content::-webkit-scrollbar {
+    display: none;
+}   
 
 .main-info-certification .certification-content .row-certificate {
-    overflow-y: hidden;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    gap: 15px;
 }
 
-.main-info-certification .certification-content iframe {
-    height: 210px;
+.main-info-certification .certification-content .row-certificate iframe {
+    margin-top: 100px;
+    width: 500px;
+    height: 450px;
+    border: none;
+
+    scroll-margin-top: 100px;
+}
+
+.main-info-certification .certification-content .row-certificate #currentItem {
+    opacity: 1;
+}
+
+.main-info-certification .certification-content .row-certificate .item {
+    opacity: 0.5;
+}
+
+.arrow-left,
+.arrow-right {
+  right: auto;
+  font-size: 20px;
+  line-height: 420px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 200%);
+  opacity: 0.5;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, rgb(0, 0, 0) 200%);
 }
 
 #certification{

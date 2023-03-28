@@ -1,24 +1,20 @@
 <main>
     <h1 id="certification">Certification</h1>
     <div class="main-info-certification">
+        <button class="arrow-left control" aria-label="Previous image" (click)="onClickLeft()">◀</button>
         <div class="certification-content">
-            <div class="row-certificate">
-                <iframe src="./assets/certificates/01.pdf" frameborder="0"></iframe>
-                <iframe src="./assets/certificates/02.pdf" frameborder="0"></iframe>
-                <iframe src="./assets/certificates/03.pdf" frameborder="0"></iframe> 
-            </div>
-
-            <div class="row-certificate">
-                <iframe src="./assets/certificates/04.pdf" frameborder="0"></iframe>
-                <iframe src="./assets/certificates/05.pdf" frameborder="0"></iframe>
-                <iframe src="./assets/certificates/06.pdf" frameborder="0"></iframe> 
-            </div>
-
-            <div class="row-certificate">
-                <iframe src="./assets/certificates/07.pdf" frameborder="0"></iframe>
-                <iframe src="./assets/certificates/08.pdf" frameborder="0"></iframe>
-                <iframe src="./assets/certificates/09.pdf" frameborder="0"></iframe> 
+            <div class="row-certificate">     
+                <iframe src="./assets/certificates/01.pdf#toolbar=0" frameborder="0" class="item" id="currentItem"></iframe>
+                <iframe src="./assets/certificates/02.pdf#toolbar=0" frameborder="0" class="item"></iframe>
+                <iframe src="./assets/certificates/03.pdf#toolbar=0" frameborder="0" class="item"></iframe> 
+                <iframe src="./assets/certificates/04.pdf#toolbar=0" frameborder="0" class="item"></iframe>
+                <iframe src="./assets/certificates/05.pdf#toolbar=0" frameborder="0" class="item"></iframe>
+                <iframe src="./assets/certificates/06.pdf#toolbar=0" frameborder="0" class="item"></iframe> 
+                <iframe src="./assets/certificates/07.pdf#toolbar=0" frameborder="0" class="item"></iframe>
+                <iframe src="./assets/certificates/08.pdf#toolbar=0" frameborder="0" class="item"></iframe>
+                <iframe src="./assets/certificates/09.pdf#toolbar=0" frameborder="0" class="item"></iframe> 
             </div>
         </div>
+        <button class="arrow-right control" aria-label="Next Image" (click)="onClickRight()">▶</button>
     </div>
 </main>
