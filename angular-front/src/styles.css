@@ -59,7 +59,6 @@ main{
 }
 
 /* MAIN-PAGE */
-
 main .main-content-presentation{
     display: grid;
     grid-template-columns: 5fr 5fr;
@@ -125,67 +124,12 @@ main .main-content-presentation .main-imagem{
     margin-left: 10px;
 }
 
-
-/* ABOUT-ME-PAGE */
-
-main .main-about-me {
-    display: grid;
-    grid-template-columns: 5fr 5fr;
-    margin-top: 50px;
-}
-
-.main-about-me .main-info-about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    margin-left: 60px;
-}
-
-.main-about-me .main-skills-about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.main-about-me .main-skills-about-me .list-skills {
-    display: grid;
-    grid-template-columns: 5fr 5fr;
-    margin-top: 30px;
-}
-
-.main-about-me .main-skills-about-me .list-skills .second-side {
-    margin-left: 100px;
-}
-
-#aboutMe {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#skillsBar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 1);
-
-    margin-top: 20px;
-    width: 150px;
-    height: 50px;
-    background-color: #D9D9D9;
-}
-
 /* PROJECTS-PAGE */
 .main-content-projects {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
 .main-content-projects button{
@@ -271,19 +215,12 @@ main .main-about-me {
     margin-top: 10px;
 }
 
-#projects{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
 /* TECHNOLOGIES-PAGE */
 .main-tech-info .row {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .main-tech-info .row img:hover {
@@ -296,25 +233,19 @@ main .main-about-me {
     transition: 300ms;
 }
 
-#technologies{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
 /* CERTIFICATION */
 .main-info-certification {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
 .main-info-certification .certification-content {
     display: flex;
     align-items: center;
-    max-width: 1000px;
-    height: 450px;
+    max-width: 1200px;
+    height: 500px;
     margin-top: 20px;
     background-color: #525659;
     overflow: hidden;
@@ -337,8 +268,8 @@ main .main-about-me {
 }
 
 .main-info-certification .certification-content .row-certificate iframe {
-    margin-top: 100px;
-    width: 500px;
+    margin-top: 60px;
+    width: 550px;
     height: 450px;
     border: none;
 
@@ -357,7 +288,7 @@ main .main-about-me {
 .arrow-right {
   right: auto;
   font-size: 20px;
-  line-height: 420px;
+  line-height: 450px;
   width: 40px;
   color: #fff;
   transition: all 600ms ease-in-out;
@@ -379,14 +310,7 @@ main .main-about-me {
   background: linear-gradient(to right, transparent 0%, rgb(0, 0, 0) 200%);
 }
 
-#certification{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
 /*------------ Footer Component ---------------*/
-
 footer {
     bottom: 0;
     background-color: #F0F0F0;
